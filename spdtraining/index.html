@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+	</script>
+</head>
+<body>
+<div class="reveal">
+	<div class="slides">
+		<section data-background="#bf5700">
+			<h1>SPD Training</h1>
+			<h3>Student Program Database</h3>
+			<p>
+				<small>Presented by <a style="color: #333f48" href="">Dr. Cassandre Alvarado</a> and <a style="color: #333f48" href="">Jonathan Garza</a></small>
+			</p>
+		</section>
+		<section data-background="#bf5700">
+			<h2>Agenda</h2>
+			<ul>
+				<li>Welcome and Introduction </li>
+				<li>History – why did we build it</li>
+				<li>Overview of main page layout</li>
+				<li>Tableau Reports – Replaced the old summary report</li>
+				<li>QA</li>
+			</ul>
+		</section>
+		<section data-background="#bf5700">
+			<h2>History</h2><h3>Why we built it?</h3>
+			<p>
+				<small>
+					Sharing information gathered through the predictive model and other institutional data is critical for leadership at all levels to make informed decisions to best help stdents.
+					An online Student Programs Database (SPD) was built by SSI to provide the college, school, and unit directors and managers of student programs with a tool to quickly access and share data about their
+					students accross campus. This relational database offers program directors the ability to assign first-year students to success program using the data like the predicted 4-year graduate rate to identify the students most likely to need additional support.
+				</small>
+				<!---->
+				<!--<q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">-->
+				<!--The nice thing about standards is that there are so many to choose from</q> and block:-->
+			</p>
+			<!--<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">-->
+			<!--&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would-->
+			<!--reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;-->
+			<!--</blockquote>-->
+		</section>
+		<section data-background="#bf5700">
+			<h5>Main Page Layout</h5>
+
+			<img style="margin-top: -15px;" data-src="spdhome.png" alt="Down arrow">
+
+		</section>
+
+				<section data-background="#bf5700">
+			<h5>Tableau Layout</h5>
+
+			<img style="margin-top: -15px;" data-src="tableauhome.png" alt="Down arrow">
+
+		</section>
+
+		<section data-background="#bf5700" style="text-align: left;">
+					<h1>THE END</h1>
+					<p>
+						<a href="mailto:student_programs_help@utlists.utexas.edu"></a> Need Help? Contact student_programs_help@utlists.utexas.edu<br>
+
+					</p>
+				</section>
+	</div>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+        dependencies: [
+            { src: 'plugin/markdown/marked.js' },
+            { src: 'plugin/markdown/markdown.js' },
+            { src: 'plugin/notes/notes.js', async: true },
+            { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+    });
+</script>
+</body>
+</html>
